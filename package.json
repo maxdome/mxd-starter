@@ -1,0 +1,20 @@
+{
+  "name": "mxd-starter",
+  "description": "Initialize PM2 with the right options",
+  "version": "1.0.0",
+  "homepage": "http://github.com/maxdome/starter",
+  "readmeFilename": "README.md",
+  "bin": {
+    "mxd-start": "bin/mxd-start.js",
+    "mxd-status": "bin/mxd-status.js",
+    "mxd-stop": "bin/mxd-stop.js"
+  },
+  "dependencies": {
+    "cpu": "^1.0.1",
+    "pm2": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxdome/starter.git"
+  }
+}
