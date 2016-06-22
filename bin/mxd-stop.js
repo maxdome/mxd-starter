@@ -20,6 +20,11 @@ pm2.connect(err => {
         process.exit(2);
       }
       console.log('mxd-starter daemon got killed');
+      /*
+       * the command doesn't exit automatically, a "pm2.disconnect();" also doesn't work, so exit
+       * the process explicitly successfully
+       */
+      process.exit(0);
     });
   });
 });
