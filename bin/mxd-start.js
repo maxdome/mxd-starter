@@ -33,8 +33,6 @@ pm2.connect(err => {
     const propertiesJson = require(`${process.cwd()}/config/properties.json`);
     if (propertiesJson['mxd-starter']) {
       Object.assign(options, propertiesJson['mxd-starter']);
-    } else if (propertiesJson['maxdome-node-starter']) {
-      Object.assign(options, propertiesJson['maxdome-node-starter']);
     }
   }
   catch (e) {
