@@ -26,6 +26,9 @@ pm2.connect(err => {
     }
   };
 
+  if (packageJson['mxd-starter']) {
+    Object.assign(options, packageJson['mxd-starter']);
+  }
   try {
     const propertiesJson = require(`${process.cwd()}/config/properties.json`);
     if (propertiesJson['mxd-starter']) {
