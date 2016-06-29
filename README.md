@@ -1,6 +1,6 @@
 # example
 
-```package.json```:
+Set the commands in the ```package.json```:
 ```
 {
   "scripts": {
