@@ -15,7 +15,7 @@ pm2.connect(err => {
     exec_mode: 'cluster',
     instances: cpu.num(),
     args: ['--toto=heya coco', '-d', '1'],
-    script: packageJson.main,
+    script: process.argv[2] || packageJson.main,
     watch: false,
     name: packageJson.name,
     error_file: `log/app_${packageJson.name}.log`,
